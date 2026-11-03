@@ -1,0 +1,19 @@
+{
+	"name": "@prc/nexus-self-improving-guidelines",
+	"version": "1.2.1",
+	"private": true,
+	"author": "Pew Research Center",
+	"description": "Harvest Gutenberg editor notes after publish and inject approved memories into Gutenberg Guidelines.",
+	"scripts": {
+		"build": "wp-scripts build --source-path=./src/settings --output-path=./build/settings",
+		"start": "wp-scripts start --source-path=./src/settings --output-path=./build/settings",
+		"typecheck": "tsc --noEmit"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^31.4.0"
+	},
+	"dependencies": {
+		"@prc/components": "*"
+	},
+	"license": "GPL-2.0-or-later"
+}
